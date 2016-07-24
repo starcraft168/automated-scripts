@@ -11,11 +11,13 @@ var greeting = function() {
 		'5': 'I love you baby'
 	};
   
-	var randomNumber = Math.floor(Math.random(0,1)*Object.keys(obj).length);
+	var randomNumber = Math.floor(Math.random(0,1)*Object.keys(morning).length);
 
 	var greeting;
 	if(date.getHours() < 13) {
 		greeting = morning[randomNumber];
+	} else {
+		greeting = "it's not morning anymore";
 	}
 
 	return greeting;
