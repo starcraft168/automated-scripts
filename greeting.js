@@ -23,4 +23,4 @@ var greeting = function() {
 	return greeting;
 };
 
-console.log(greeting);
+console.log(greeting());
